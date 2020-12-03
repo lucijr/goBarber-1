@@ -1,8 +1,13 @@
 // eslint-disable-next-line no-use-before-define
 import React from 'react';
-import { FiLogIn } from 'react-icons/fi';
+
+import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 import { Background, Conteiner, Content } from './styles';
+
 import logoImg from '../../assets/logo.svg';
+
+import Button from '../../components/Button';
+import Input from '../../components/Input';
 
 const Sigin: React.FC = () => (
   <Conteiner>
@@ -13,11 +18,11 @@ const Sigin: React.FC = () => (
 
         <h1>Faça seu logon</h1>
 
-        <input placeholder="E-mail" />
+        <Input icon={FiMail} name="email" placeholder="E-mail" />
 
-        <input type="password" placeholder="Senha" />
+        <Input icon={FiLock} name="password" type="password" placeholder="Senha" />
 
-        <button type="submit" placeholder="Senha"> Entrar </button>
+        <Button type="submit" placeholder="Senha"> Entrar </Button>
 
         <a href="forgot"> Esqueci a minha senha </a>
 
