@@ -2,14 +2,18 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
 
-# testing
-/coverage
+#eslint
+.eslintcache
+.eslintrc.json
+.eslintignore
 
-# production
-/build
+#
+.editorconfig
+/.vscode
+
+# prettier
+prettier.config.js
 
 # misc
 .DS_Store
@@ -18,6 +22,12 @@
 .env.test.local
 .env.production.local
 
-npm-debug.log*
+# yarn
 yarn-debug.log*
 yarn-error.log*
+
+
+# vscode git config api
+/src/api/git.d.ts
+
+
